@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BY TEAM METAGLOW </title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="team" src="teamposter.jpg">
+            <img id="link" src="link.jpeg">
+            <video id=“pitchvideo” autoplay loop="true" src="pitch.mp4" >
+            <video id=“demovideo” autoplay loop="true" src="demo.mp4" >
+        </a-assets>
+        
+        <!-- Sky -->
+        <a-sky color="#87CEEB"></a-sky>
+        
+        <!-- Ground -->
+        <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#888">
+            <a-image src="#link" width="8" height="6"></a-image>
+        </a-plane>
+        
+        <!-- Left Wall -->
+        <a-video src="demo.mp4" position ="-5 2.5 0" rotation="0 90 0" width="10" height="5"></a-video>
+        <!-- Back Wall -->
+        <a-plane color="#777" position="0 2.5 -5" width="10" height="5"></a-plane>
+        <a-image position="0 2.5 -5" src="#team" width="7" height="5"></a-image>     
+      
+        <!-- Right Wall -->
+        <a-video src="pitch.mp4" position ="5 2.5 0" rotation="0 -90 0" width="10" height="5" ></a-video>
+    </a-scene>
+</body>
+</html>
